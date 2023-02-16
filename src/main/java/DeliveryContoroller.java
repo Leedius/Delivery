@@ -74,6 +74,9 @@ public class DeliveryContoroller extends HttpServlet {
 			String tell = request.getParameter("tell");
 			String location = request.getParameter("location");
 			
+			int totalPrice = 10000 * chikenNum + 1000 * addOrder.length;
+			request.setAttribute("totalPrice", totalPrice);
+			
 			//고객정보 객체 생성
 			Order order = new Order(menuName, chikenNum, addOrder, requestText);
 			Delivery deliver = new Delivery(customer, tell, location);

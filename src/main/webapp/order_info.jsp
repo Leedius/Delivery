@@ -45,7 +45,7 @@ tr,td{
 					<td>추가사항 : <c:forEach items="${menuSelect.addOrder }" var="e">${e }</c:forEach> </td>
 				</tr>
 				<tr>
-					<td>주문 금액 : ${menuSelect.chikenNum *10000}원</td>
+					<td>주문 금액 : ${menuSelect.chikenNum *10000+menuSelect.addOrder.length*1000}원</td>
 				</tr>
 				<tr>
 					<td>요청 사항 : ${menuSelect.requestText }</td>
