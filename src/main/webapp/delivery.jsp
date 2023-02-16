@@ -13,6 +13,8 @@ table{
 .c1{
 	font-weight: bolder;
 }
+
+
 </style>
 </head>
 <body>
